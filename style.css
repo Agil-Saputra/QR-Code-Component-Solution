@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Patrick+Hand&display=swap');
+
+
+:root {
+    --color1: hsl(0, 0%, 100%);
+    --color2: hsl(212, 45%, 89%);
+    --color3: hsl(220, 15%, 55%);
+    --color4: hsl(218, 44%, 22%);
+    --font-size: 15px;
+    --font-size2 : 30px;
+    --weight1: 400;
+    --weight2: 700;
+  
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: outfit;
+
+}
+
+body {
+    background-color: var(--color2);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container {
+    background-color: var(--color1);
+    width: 260px;
+    padding: 1rem;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0px 6px 11px 0px hsl(220, 15%, 55%);
+}
+
+
+
+.image img {
+    width: 100%;
+    border-radius: 20px;
+    margin: var(--padding);
+
+}
+
+.text h1 {
+    font-size: var(--font-size1);
+    font-weight: var(--weight2);
+    margin: 20px 0;
+}
+
+.text p {
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+@media  screen and (max-width: 506px) {
+    .container {
+        width: 65%;
+    }
+}
